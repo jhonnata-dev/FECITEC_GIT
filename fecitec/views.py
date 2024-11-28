@@ -21,6 +21,7 @@ def cronograma_view(request):
 def submissao_view(request):
     form = SubmissionToWorkForm()
 
+
     if request.method == 'POST' and request.FILES:
         form = SubmissionToWorkForm(request.POST, request.FILES)
 
